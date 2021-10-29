@@ -48,6 +48,7 @@
   "type": "module",
   "exports": {
     "./package.json": "./package.json",
+    "./App/index.svelte": "./App/index.svelte",
     "./Button/index.svelte": "./Button/index.svelte",
     ".": "./index.js"
   },
