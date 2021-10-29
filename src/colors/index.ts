@@ -1,1 +1,5 @@
-export * as flat from './flat';
+import * as flat from './flat';
+
+export default {
+	flat
+};
