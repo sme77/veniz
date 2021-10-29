@@ -1,4 +1,5 @@
 import preprocess from 'svelte-preprocess';
+import node from '@sveltejs/adapter-node';
 import WindiCSS from 'vite-plugin-windicss/dist/index.mjs';
 
 const config = {
@@ -7,6 +8,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
+		adapter: node({ env: { port: process.env.PORT } }),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		vite: {
