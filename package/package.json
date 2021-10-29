@@ -1,7 +1,7 @@
 {
   "name": "veniz",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Veniz - Svelte Typescript WindiCSS UI Library",
   "author": "Esmaeel Emadi",
   "license": "MIT",
@@ -35,6 +35,7 @@
     "eslint-plugin-svelte3": "^3.2.1",
     "prettier": "^2.4.1",
     "prettier-plugin-svelte": "^2.4.0",
+    "sass": "^1.43.4",
     "svelte": "^3.42.6",
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.9.4",
@@ -47,7 +48,7 @@
   "type": "module",
   "exports": {
     "./package.json": "./package.json",
-    "./Button.svelte": "./Button.svelte",
+    "./Button/index.svelte": "./Button/index.svelte",
     ".": "./index.js"
   },
   "svelte": "./index.js"
