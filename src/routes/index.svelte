@@ -1,5 +1,4 @@
 <script lang="ts">
-	import '../styles/index.scss';
 	import 'virtual:windi.css';
 
 	import { Button } from '../lib';

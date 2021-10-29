@@ -1,7 +1,7 @@
 {
 	"name": "veniz",
 	"private": false,
-	"version": "0.0.4",
+	"version": "0.1.3",
 	"description": "Veniz - Svelte Typescript WindiCSS UI Library",
 	"author": "Esmaeel Emadi",
 	"license": "MIT",
