@@ -1,4 +1,5 @@
 import { defineConfig } from 'windicss/helpers';
+import { flat } from './src/palletes';
 
 // const ENV = process.env.ENV;
 
@@ -26,5 +27,10 @@ import { defineConfig } from 'windicss/helpers';
 // };
 
 export default defineConfig({
-	darcMode: 'class'
+	darcMode: 'class',
+	theme: {
+		transparent: 'transparent',
+		current: 'currentColor',
+		colors: flat
+	}
 });
