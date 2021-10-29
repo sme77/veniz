@@ -1,4 +1,77 @@
+// GLOBAL 
+body {
+	@apply dark:bg-base-basic-dark;
+	@apply dark:text-base-basic-light;
+	@apply overflow-x-hidden;
+}
+
+.clickable:disabled {
+	@apply opacity-50;
+	&.clickable:hover {
+		@apply translate-y-0;
+	}
+	@apply cursor-not-allowed;
+}
+
+.outlined {
+	@apply border-2;
+}
+
+/* SHAPES */
+.block {
+	@apply w-full;
+}
+
+.flat {
+	@apply rounded-none;
+}
+
+.rounded {
+	@apply rounded-3xl;
+}
+
+.soft {
+	@apply rounded-md;
+}
+
+// COLORS
 .basic {
 	@apply text-base-basic-light;
 	@apply bg-base-basic-dark;
+	@apply dark:bg-base-basic-light;
+	@apply dark:text-base-dark-dark;
+	&.inverted {
+		@apply text-base-inverted-dark;
+		@apply text-base-inverted-light;
+		// @apply dark:text-basic-norm-alt;
+		&.clickable:hover {
+			@apply bg-basic-ligt-main;
+			/* @apply bg-basic-norm-supp; */
+			@apply bg-opacity-10;
+		}
+	}
+	// &.outlined {
+	// 	@apply text-basic-out-main;
+	// 	@apply bg-basic-out-supp;
+	// 	@apply border-basic-out-main;
+	// 	@apply dark:text-basic-norm-alt;
+	// 	@apply dark:border-basic-norm-alt;
+	// 	&.clickable:hover {
+	// 		@apply text-basic-norm-supp;
+	// 		@apply bg-basic-norm-main;
+	// 		@apply dark:text-basic-darc-main;
+	// 		@apply dark:bg-basic-norm-alt;
+	// 	}
+	// }
+	// &.ligt {
+	// 	@apply text-basic-ligt-supp;
+	// 	@apply bg-basic-ligt-main;
+	// 	@apply bg-opacity-10;
+	// 	@apply dark:text-basic-norm-alt;
+	// 	/* @apply dark:bg-opacity-10; */
+	// }
+	// &.darc {
+	// 	@apply text-basic-darc-supp;
+	// 	@apply bg-basic-darc-main;
+	// }
 }
