@@ -7,17 +7,18 @@
 	export let disabled: boolean = false;
 	export let onhold: boolean = false;
 
-	export let basic: boolean = false;
+	export let base: boolean = false;
 	export let primary: boolean = false;
 	export let success: boolean = false;
 	export let warning: boolean = false;
 	export let danger: boolean = false;
 	export let info: boolean = false;
+	export let link: boolean = false;
 
 	export let outlined: boolean = false;
 	export let light: boolean = false;
 	export let dark: boolean = false;
-	export let inverted: boolean = false;
+	export let ghost: boolean = false;
 
 	export let xs: boolean = false;
 	export let sm: boolean = false;
@@ -26,17 +27,13 @@
 	export let xl: boolean = false;
 
 	export let block: boolean = false;
-	export let rounded: boolean = false;
-	export let soft: boolean = false;
-	export let flat: boolean = false;
 
 	let color = '';
 	let size = '';
-	let shape = '';
 
 	$: {
-		color = basic
-			? 'basic'
+		color = base
+			? 'base'
 			: primary
 			? 'primary'
 			: success
@@ -47,15 +44,13 @@
 			? 'danger'
 			: info
 			? 'info'
-			: 'basic';
+			: link
+			? 'link'
+			: 'base';
 	}
 
 	$: {
 		size = xs ? 'xs' : sm ? 'sm' : md ? 'md' : lg ? 'lg' : xl ? 'xl' : 'md';
-	}
-
-	$: {
-		shape = soft ? 'soft' : rounded ? 'rounded' : flat ? 'flat' : 'soft';
 	}
 </script>
 
@@ -63,7 +58,6 @@
 	class={`
 			${addClass}
 			${size}
-			${shape}
 			${color}
 			clickable 
 		 	transform
@@ -71,20 +65,20 @@
 		 	my-1
 		 	py-2
 		 	px-5
-		 	duration-50
+		 	duration-75
 		 	ease-in-out
 		 	border-solid
 		 	inline-flex
 		 	items-center
 		 	justify-center
 			focus:outline-none
-			hover:translate-y-0.5
-			active:scale-95
+	 		active:scale-95 
+			rounded-lg
 			`}
-	class:ligt={light}
-	class:darc={dark}
+	class:light
+	class:dark
 	class:outlined
-	class:inverted
+	class:ghost
 	class:block
 	on:click
 	on:focus
