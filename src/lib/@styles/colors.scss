@@ -1,0 +1,310 @@
+.clickable:hover {
+	@apply shadow-lg;
+	&.ghost { 
+		@apply dark:shadow-white;
+	}
+}
+
+.base {
+	@apply dark:bg-base-100;
+	@apply dark:text-base-900;
+	@apply text-white; 
+	@apply bg-base-700;
+	&.clickable:hover {
+		@apply bg-base-600;
+		@apply dark:bg-base-200;
+	}
+	&.light { 
+		@apply bg-base-500;
+		@apply text-base-900;
+		@apply bg-opacity-10;
+		@apply dark:text-base-200;
+		@apply dark:bg-base-500;
+		@apply dark:bg-opacity-10;
+		&.clickable:hover {
+			@apply dark:bg-base-500;
+			@apply bg-opacity-20;
+			@apply dark:bg-opacity-20;
+		}
+	}
+	&.outlined { 
+		@apply bg-transparent;
+		@apply text-base-600;
+		@apply dark:text-base-200;
+		&.clickable:hover {
+			@apply bg-opacity-10;
+		}
+	}
+	&.ghost { 
+		@apply bg-transparent;
+		@apply text-base-600;
+		@apply dark:text-base-200;
+		&.clickable:hover {
+			@apply bg-transparent;
+		}
+	}
+	&.dark { 
+			@apply bg-black;
+			@apply text-white;
+			&.clickable:hover { 
+				@apply bg-black;
+				@apply text-opacity-80;
+			}
+	}
+	&.background { 
+		@apply text-black;
+		@apply bg-white;
+		@apply dark:bg-base-900;
+		@apply dark:text-white;
+	}
+}
+
+.primary{
+	@apply dark:bg-primary-500;
+	@apply dark:text-base-900;
+	@apply text-white;
+	@apply bg-primary-500;
+	&.clickable:hover {
+		@apply bg-primary-600;
+	}
+	&.light { 
+		@apply bg-primary-500;
+		@apply text-primary-900;
+		@apply dark:text-primary-500;
+		@apply bg-opacity-10;
+		&.clickable:hover {
+			@apply bg-opacity-20;
+		}
+	}
+	&.outlined { 
+		@apply bg-transparent;
+		@apply text-primary-600;
+		&.clickable:hover {
+			@apply bg-opacity-10;
+		}
+	}
+	&.ghost { 
+		@apply bg-transparent;
+		@apply text-primary-500;
+		&.clickable:hover {
+			@apply bg-transparent;
+		}
+	}
+	&.dark { 
+			@apply bg-black;
+			@apply text-primary-500;
+			&.clickable:hover { 
+				@apply bg-black;
+				@apply text-opacity-80;
+			}
+	}
+}
+
+.success{
+	@apply dark:bg-success-500;
+	@apply dark:text-base-900;
+	@apply text-white;
+	@apply bg-success-500;
+	&.clickable:hover {
+		@apply bg-success-600;
+	}
+	&.light { 
+		@apply bg-success-500;
+		@apply text-success-900;
+		@apply dark:text-success-500;
+		@apply bg-opacity-10;
+		&.clickable:hover {
+			@apply bg-opacity-20;
+		}
+	}
+	&.outlined { 
+		@apply bg-transparent;
+		@apply text-success-600;
+		&.clickable:hover {
+			@apply bg-opacity-10;
+		}
+	}
+	&.ghost { 
+		@apply bg-transparent;
+		@apply text-success-500;
+		&.clickable:hover {
+			@apply bg-transparent;
+		}
+	}
+	&.dark { 
+			@apply bg-black;
+			@apply text-success-500;
+			&.clickable:hover { 
+				@apply bg-black;
+				@apply text-opacity-80;
+			}
+	}
+}
+
+.warning{
+	@apply dark:bg-warning-500;
+	@apply dark:text-base-900;
+	@apply text-white;
+	@apply bg-warning-500;
+	&.clickable:hover {
+		@apply bg-warning-600;
+	}
+	&.light { 
+		@apply bg-warning-500;
+		@apply text-warning-900;
+		@apply dark:text-warning-500;
+		@apply bg-opacity-10;
+		&.clickable:hover {
+			@apply bg-opacity-20;
+		}
+	}
+	&.outlined { 
+		@apply bg-transparent;
+		@apply text-warning-600;
+		&.clickable:hover {
+			@apply bg-opacity-10;
+		}
+	}
+	&.ghost { 
+		@apply bg-transparent;
+		@apply text-warning-500;
+		&.clickable:hover {
+			@apply bg-transparent;
+		}
+	}
+	&.dark { 
+			@apply bg-black;
+			@apply text-warning-500;
+			&.clickable:hover { 
+				@apply bg-black;
+				@apply text-opacity-80;
+			}
+	}
+}
+
+.danger{
+	@apply dark:bg-danger-500;
+	@apply dark:text-base-900;
+	@apply text-white;
+	@apply bg-danger-500;
+	&.clickable:hover {
+		@apply bg-danger-600;
+	}
+	&.light { 
+		@apply bg-danger-500;
+		@apply text-danger-900;
+		@apply dark:text-danger-500;
+		@apply bg-opacity-10;
+		&.clickable:hover {
+			@apply bg-opacity-20;
+		}
+	}
+	&.outlined { 
+		@apply bg-transparent;
+		@apply text-danger-600;
+		&.clickable:hover {
+			@apply bg-opacity-10;
+		}
+	}
+	&.ghost { 
+		@apply bg-transparent;
+		@apply text-danger-500;
+		&.clickable:hover {
+			@apply bg-transparent;
+		}
+	}
+	&.dark { 
+			@apply bg-black;
+			@apply text-danger-500;
+			&.clickable:hover { 
+				@apply bg-black;
+				@apply text-opacity-80;
+			}
+	}
+}
+
+.info{
+	@apply dark:bg-info-500;
+	@apply dark:text-base-900;
+	@apply text-white;
+	@apply bg-info-500;
+	&.clickable:hover {
+		@apply bg-info-600;
+	}
+	&.light { 
+		@apply bg-info-500;
+		@apply text-info-900;
+		@apply dark:text-info-500;
+		@apply bg-opacity-10;
+		&.clickable:hover {
+			@apply bg-opacity-20;
+		}
+	}
+	&.outlined { 
+		@apply bg-transparent;
+		@apply text-info-600;
+		&.clickable:hover {
+			@apply bg-opacity-10;
+		}
+	}
+	&.ghost { 
+		@apply bg-transparent;
+		@apply text-info-500;
+		&.clickable:hover {
+			@apply bg-transparent;
+		}
+	}
+	&.dark { 
+			@apply bg-black;
+			@apply text-info-500;
+			&.clickable:hover { 
+				@apply bg-black;
+				@apply text-opacity-80;
+			}
+	}
+}
+
+.link{
+	@apply dark:bg-link-500;
+	@apply dark:text-base-900;
+	@apply text-white;
+	@apply bg-link-500;
+	&.clickable:hover {
+		@apply bg-link-600;
+	}
+	&.light { 
+		@apply bg-link-500;
+		@apply text-link-900;
+		@apply dark:text-link-500;
+		@apply bg-opacity-10;
+		&.clickable:hover {
+			@apply bg-opacity-20;
+		}
+	}
+	&.outlined { 
+		@apply bg-transparent;
+		@apply text-link-600;
+		&.clickable:hover {
+			@apply bg-opacity-10;
+		}
+	}
+	&.ghost { 
+		@apply bg-transparent;
+		@apply text-link-500;
+		&.clickable:hover {
+			@apply bg-transparent;
+		}
+	}
+	&.dark { 
+			@apply bg-black;
+			@apply text-link-500;
+			&.clickable:hover { 
+				@apply bg-black;
+				@apply text-opacity-80;
+			}
+	}
+}
+
+
+
+

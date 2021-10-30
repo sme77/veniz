@@ -1,0 +1,25 @@
+.xs {
+	@apply text-xs;
+	@apply font-ligt;
+}
+
+.sm {
+	@apply text-sm;
+	@apply font-normal;
+}
+
+.md {
+	@apply text-base;
+	@apply font-medium;
+}
+
+.lg {
+	@apply text-lg;
+	@apply font-semibold;
+}
+
+.xl {
+	@apply text-2xl;
+	@apply font-bold;
+	@apply px-7;
+}
