@@ -3,10 +3,6 @@
 @import './colors.scss';
 
 .clickable:disabled {
-	@apply opacity-50;
-	&.clickable:hover {
-		@apply translate-y-0;
-	}
 	@apply cursor-not-allowed;
 }
 
@@ -19,6 +15,18 @@
 	@apply w-full;
 }
 
+.fullscreen { 
+	@apply absolute;
+	@apply top-0;
+	@apply bottom-0;
+	@apply left-0;
+	@apply right-0;
+	@apply overflow-hidden;
+}
 
+.page { 
+	@apply min-w-screen;
+	@apply min-h-screen;
+	@apply overflow-x-hidden;
+}
 
-// COLORS

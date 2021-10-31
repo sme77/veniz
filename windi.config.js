@@ -28,6 +28,7 @@ import flat from './src/lib/@palettes/flat';
 
 export default defineConfig({
 	darcMode: 'class',
+	plugins: [require('windicss/plugin/typography')],
 	theme: {
 		colors: {
 			transparent: 'transparent',

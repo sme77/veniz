@@ -1,7 +1,7 @@
 {
   "name": "veniz",
   "private": false,
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Veniz - Svelte Typescript WindiCSS UI Library",
   "author": "Esmaeel Emadi",
   "license": "MIT",
@@ -27,6 +27,7 @@
     ]
   },
   "devDependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.55",
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
@@ -52,8 +53,12 @@
     "./@colors": "./@colors/index.js",
     "./@palettes/flat": "./@palettes/flat.js",
     "./@palettes": "./@palettes/index.js",
+    "./@styles/colors.scss": "./@styles/colors.scss",
+    "./@styles/globals.scss": "./@styles/globals.scss",
     "./@styles/index.scss": "./@styles/index.scss",
+    "./@styles/sizes.scss": "./@styles/sizes.scss",
     "./Button/index.svelte": "./Button/index.svelte",
+    "./Div/index.svelte": "./Div/index.svelte",
     ".": "./index.js"
   },
   "svelte": "./index.js"

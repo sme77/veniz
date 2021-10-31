@@ -5,25 +5,23 @@ declare const __propDef: {
         type?: "button" | "submit";
         disabled?: boolean;
         onhold?: boolean;
-        basic?: boolean;
+        base?: boolean;
         primary?: boolean;
         success?: boolean;
         warning?: boolean;
         danger?: boolean;
         info?: boolean;
+        link?: boolean;
         outlined?: boolean;
         light?: boolean;
         dark?: boolean;
-        inverted?: boolean;
+        ghost?: boolean;
         xs?: boolean;
         sm?: boolean;
         md?: boolean;
         lg?: boolean;
         xl?: boolean;
         block?: boolean;
-        rounded?: boolean;
-        soft?: boolean;
-        flat?: boolean;
     };
     events: {
         click: MouseEvent;

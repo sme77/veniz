@@ -16,14 +16,9 @@
 	export let dark: boolean = false;
 	export let ghost: boolean = false;
 
-	export let background: boolean = false;
-
 	$: {
-		if (outlined || ghost || dark) light = false;
-		else light = true;
+		if (!outlined && !light && !dark) ghost = true;
 	}
-
-	export let block: boolean = false;
 
 	let color = '';
 
@@ -44,18 +39,15 @@
 	}
 </script>
 
-<div
+<h4
 	class={`
 			${color} 
 			${addClass}
-      p-2
-	`}
+		`}
 	class:light
 	class:dark
 	class:outlined
 	class:ghost
-	class:block
-	class:background
 	on:click
 	on:focus
 	on:mouseover
@@ -64,4 +56,4 @@
 	disabled={disabled || onhold}
 >
 	<slot />
-</div>
+</h4>

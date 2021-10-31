@@ -1,4 +1,24 @@
-.basic {
-	@apply text-base-baic-light;
-	@apply bg-base-basic-dark;
+@import './globals.scss';
+@import './sizes.scss';
+@import './colors.scss';
+
+.clickable:disabled {
+	@apply opacity-50;
+	&.clickable:hover {
+		@apply translate-y-0;
+	}
+	@apply cursor-not-allowed;
 }
+
+.outlined {
+	@apply border-2;
+}
+
+/* SHAPES */
+.block {
+	@apply w-full;
+}
+
+
+
+// COLORS

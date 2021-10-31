@@ -1,2 +1,14 @@
 export { default as Button } from './Button/index.svelte';
-export { default as Div } from './Div/index.svelte';
+export { default as Container } from './Container/index.svelte';
+export { default as Article } from './Article/index.svelte';
+export { default as H1 } from './H1/index.svelte';
+export { default as H2 } from './H2/index.svelte';
+export { default as H3 } from './H3/index.svelte';
+export { default as H4 } from './H4/index.svelte';
+export { default as P } from './P/index.svelte';
+export { default as Form } from './Form/index.svelte';
+export { default as FormElement } from './FormElement/index.svelte';
+export { default as Label } from './Label/index.svelte';
+export { default as Input } from './Input/index.svelte';
+export { default as Navbar } from './Navbar/index.svelte';
+export { default as Footer } from './Footer/index.svelte';
